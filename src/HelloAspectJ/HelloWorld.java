@@ -1,6 +1,8 @@
 package HelloAspectJ;
 
 public class HelloWorld {
+	public String str;
+	
 	public static void main(String[] args) {
 		String msg = "Hello AspecftJ!";
 		String name = "Casper";
