@@ -1,7 +1,5 @@
 package HelloAspectJ;
 
-import HelloAspectJ.HelloWorld;
-
 public aspect MannersAspect {
 	pointcut hasBall(HelloWorld hw) : this(hw) && if(hw.getStr().equals("hw"));
 	pointcut callSayMessage(HelloWorld hw) :
