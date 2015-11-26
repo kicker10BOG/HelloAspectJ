@@ -14,7 +14,7 @@ I also recommend installing the AJDT plugin for Eclipse if you are using Eclipse
     3. `jar cfm app.jar META-INF\MANIFEST.MF -C classes .`
   * Compile the trace library: ```ajc src\HelloAspectJ\HelloWorld.java \src\HelloAspectJ\MannersAspect.aj -outjar tracelib.jar```
   * Compile the app with tracing:
-    * ```ajc -inpath app.jat -aspectpath tracelib.jar -outjar tracedapp.jar```
+    * ```ajc -inpath app.jar -aspectpath tracelib.jar -outjar tracedapp.jar```
   * Run the app:
     * Without tracing: `java -cp app.jar HelloAspectJ.HelloWorld`
     * With Tracing: ```java -cp "C:\aspectj1.8\lib\aspectjrt.jar;tracedapp.jar;tracelib.jar" HelloAspectJ.HelloWorld``` 
